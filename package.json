@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "express": "^5.1.0",
-    "fontkit": "^2.0.4",
-    "fs": "^0.0.1-security",
-    "pdf-lib": "^1.17.1"
-  }
-}

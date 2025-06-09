@@ -1,0 +1,97 @@
+{
+  "left": {
+    "1": {
+      "lastName": "Исмоилов",
+      "firstName": "Алишер",
+      "middleName": "Рустамович"
+    },
+    "2": {
+      "birthYear": "2000",
+      "birthMonth": "01",
+      "birthDay": "15"
+    },
+    "3": {
+      "birthPlace": "Ташкент"
+    },
+    "4": {
+      "nationality": "Ўзбек"
+    },
+    "5": {
+      "religion": "Ислом"
+    },
+    "6": {
+      "yoshlarUchun": "Йўқ"
+    },
+    "7": {
+      "kasabaUchun": "Ҳа"
+    },
+    "8": {
+      "educationLevel": "Олий",
+      "institution": "ТАТУ",
+      "specialty": "Компьютер инж.",
+      "type": "Кундузги"
+    },
+    "9": {
+      "diplomaSpec": "Информатика",
+      "issuer": "ТАТУ"
+    },
+    "10": {
+      "diplomaNumber": "123456",
+      "diplomaYear": "2023",
+      "diplomaDate": "15-май"
+    }
+  },
+  "right": {
+    "11": {
+      "mainSpecialty": "Муҳандис"
+    },
+    "12": {
+      "specExperience": "5 йил"
+    },
+    "13": {
+      "generalExperience": "7 йил"
+    },
+    "14": {
+      "lastJob": "TATU, катта ўқитувчи",
+      "reasonLeave": "Шартнома тугади"
+    },
+    "15": {
+      "familyStatus": "Уйланган",
+      "familyNotes": "3 фарзанд"
+    },
+    "16": {
+      "extra1": ""
+    },
+    "17": {
+      "extra2": ""
+    },
+    "18": {
+      "extra3": ""
+    },
+    "19": {
+      "extra4": ""
+    },
+    "20": {
+      "passportSeries": "AB",
+      "passportNumber": "1234567",
+      "issuedBy": "ИИБ Тошкент",
+      "issuedDate": "01.01.2020"
+    },
+    "21": {
+      "address": "Тошкент ш.",
+      "phone": "+998 90 123 45 67",
+      "signature": "Имзо"
+    }
+  },
+  "bottom": {
+    "militaryGroup": "1-б",
+    "militaryType": "2-й тур",
+    "composition": "захира",
+    "militaryRank": "лейтенант",
+    "specialty": "инженер",
+    "militaryFit": "яроқли",
+    "commissionName": "Тошкент ҳарбий комиссариати",
+    "commissionNote": "2022 йил текшируви",
+    "militaryNumber": "T-127"
+  }
+}
