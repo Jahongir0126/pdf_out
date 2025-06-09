@@ -16,7 +16,7 @@ app.use(express.json());
 // Настройка CORS для Render.com
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://pdf-form-frontend.onrender.com'] 
+    ? ['https://pdf-out.onrender.com'] 
     : ['http://localhost:5173']
 }));
 
