@@ -3,10 +3,22 @@ import { readFileSync } from 'fs';
 import fontkit from '@pdf-lib/fontkit';
 import { PDFDocument } from 'pdf-lib';
 import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Настройка CORS для Render.com
+app.use(cors({
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://pdf-form-frontend.onrender.com'] 
+    : ['http://localhost:5173']
+}));
 
 const mm = mm => mm * 2.83465;
 
@@ -91,4 +103,5 @@ app.post('/fill-pdf', async (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log('✅ Сервер запущен на http://localhost:3001'));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));

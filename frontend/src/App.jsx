@@ -4,6 +4,11 @@ import axios from 'axios';
 import defaultData from '../data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Определяем URL API в зависимости от окружения
+const API_URL = import.meta.env.MODE === 'production'
+  ? 'https://pdf-form-backend.onrender.com'
+  : 'http://localhost:3001';
+
 export default function App() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -30,7 +35,7 @@ export default function App() {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:3001/fill-pdf', form, {
+      const response = await axios.post(`${API_URL}/fill-pdf`, form, {
         responseType: 'blob'
       });
       const blob = new Blob([response.data], { type: 'application/pdf' });
@@ -42,6 +47,7 @@ export default function App() {
       window.URL.revokeObjectURL(url);
     } catch (err) {
       console.error(err);
+      setErrors({ submit: 'Ошибка при создании PDF' });
     } finally {
       setLoading(false);
     }
