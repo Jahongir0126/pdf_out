@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Определяем URL API в зависимости от окружения
 const API_URL = import.meta.env.MODE === 'production'
-  ? 'https://pdf-form-backend.onrender.com'
+  ? 'https://pdf-out.onrender.com'
   : 'http://localhost:3001';
 
 export default function App() {
